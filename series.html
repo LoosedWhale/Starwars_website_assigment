@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StarWars Series</title>
+<link rel="stylesheet" href="mall.css">
+</head>
+<body>
+     <!-- Header start -->
+    <div class= "megahead">
+        <div class="header">
+            <a href="index.html">
+            <div class="headimg"></div>
+            </a>
+        </div>
+        <!-- No more head -->
+        
+                <!-- Nav start -->
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="mobile-menu">
+                <li><a href="films.html">Films</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul id="desktop-menu">
+                <li><a href="films.html">Films</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="breakline"></div>        
+    </div>
+    <!-- Nav commited fruad and had to leave -->
+    
+    
+    <!-- Content -->
+    <article>
+        <section>
+               <br>
+               <h1>S Tier Series</h1>
+               <div class="content-container">
+                    <div class="content">
+                        <img src="ahsoka-payoff-vertical-nodate_a20eda2a.jpeg" alt="Image Description">
+                        <div class="imgBot"> <p>Ahsoka (2023) <br> Seasons: 1 | Episodes: 8</p></div>
+                    </div>
+
+                    <div class="content">
+                        <img src="the-mandalorian-poster-s3-serieslp_aa55f7a4.jpeg" alt="Image Description" width="1000px" height="1482px">
+                        <div class="imgBot"><p>The Mandalorian (2019-present) <br> Seasons: 3 | Episodes: 24</p></div> 
+                    </div>
+                   <div class="content">
+                        <img src="the-clone-wars-returns-2020-key-art_ef129114.jpeg" alt="Image Description" height="1482px">
+                        <div class="imgBot"> <p>Clone Wars (2003-2008) <br> Seasons: 7 | Total Episodes: 133</p></div>
+                    </div>
+                </div>
+            <p>Ahsoka:
+            "Ahsoka" is a highly anticipated live-action series set in the Star Wars universe. Scheduled for release in 2023, this show promises to delve into the adventures and challenges faced by the iconic character Ahsoka Tano, portrayed by Rosario Dawson. With one season consisting of 8 episodes, fans are eager to follow Ahsoka's journey.</p>
+
+            <p>Mandalorian:
+            "The Mandalorian" is a groundbreaking series that premiered in 2019 and continues to captivate audiences. This live-action show explores the life of a lone bounty hunter, Din Djarin, in the outer reaches of the galaxy. With three seasons and 24 episodes, it has introduced beloved characters like Grogu, also known as Baby Yoda.</p>
+
+            <p>Clone Wars:
+            "Clone Wars" is an animated series that originally aired from 2003 to 2008. It takes viewers on a thrilling journey through the galaxy during a time of war. This series introduces new characters and revisits familiar faces, providing valuable insights into the Star Wars mythos.</p>
+            
+            
+            
+                <h1>Live Action</h1>
+                 <div class="content-container">
+                       <div class="content">
+                            <img src="p_starwarsobiwankenobi_v2_20649_ebb5549e.jpeg" alt="Image Description">
+                            <div class="imgBot"> <p>Obi-Wan Kenobi (2022) <br> Seasons: 1 | Episodes: 6</p></div>
+                        </div>
+
+                     <div class="content">
+                            <img src="p_disneyplusoriginals_andor_v1_569_e2e1b900.jpeg" alt="Image Description">
+                            <div class="imgBot"> <p>Andor (2022-present) <br> Seasons: 1 | Total Episodes: 12</p></div>
+                        </div>
+
+                       <div class="content">
+                            <img src="p_disney_thebookofbobafett_withlogo_20721-1_4032a3ae_8d31afa8.jpeg" alt="Image Description">
+                            <div class="imgBot"> <p>The Book of Boba Fett (2021-2022) <br> Seasons: 1 | Episodes: 7</p></div>
+                        </div>
+                 </div>
+            <p>Obi-Wan:
+            "Obi-Wan Kenobi" is a live-action series that premiered in 2022. This highly anticipated show focuses on the legendary Jedi Master Obi-Wan Kenobi, portrayed by Ewan McGregor. With a single season of 6 episodes, it explores Obi-Wan's life and adventures after the fall of the Jedi Order.</p>
+            
+            <p>Andor:
+            "Andor," which began airing in 2022, is another exciting addition to the Star Wars series. It centers on Cassian Andor, a character fans first met in "Rogue One." With one season comprising 12 episodes, it delves into the thrilling espionage and challenges faced by the Rebel Alliance.</p>
+            
+            <p>Boba Fett:
+            "The Book of Boba Fett" is a live-action series that aired in 2021 and concluded in 2022. It features the enigmatic bounty hunter Boba Fett and his associate Fennec Shand. This 7-episode series explores Boba Fett's journey to establish his rule in the galaxy's criminal underworld.</p>
+            
+            <br>
+        </section>
+    </article>
+    <!-- Run out of content -->
+
+    
+<script>
+// JavaScript to handle the menu toggle
+var menuToggle = document.getElementById("menu-toggle");
+var mobileMenu = document.getElementById("mobile-menu");
+var desktopMenu = document.getElementById("desktop-menu");
+
+function toggleMenu() {
+    if (window.innerWidth <= 768) {
+        mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+    } else {
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "block";
+    }
+}
+
+menuToggle.addEventListener("click", toggleMenu);
+
+// Detect window resize to handle automatic mode switching
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
+        // If the window width is greater than 768px (desktop mode)
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "block";
+    } else {
+        // If the window width is 768px or less (mobile mode)
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "none";
+    }
+});
+</script>
+
+</body>
+</html>

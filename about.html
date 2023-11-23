@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StarWars About</title>
+<link rel="stylesheet" href="mall.css">
+</head>
+
+<body>
+    <!-- Header start -->
+    <div class= "megahead">
+        <div class="header">
+            <a href="index.html">
+            <div class="headimg"></div>
+            </a>
+        </div>
+        <!-- No more head -->
+        
+        <!-- Nav start -->
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="mobile-menu">
+                <li><a href="films.html">Films</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul id="desktop-menu">
+                <li><a href="films.html">Films</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="breakline"></div>        
+    </div>
+    <!-- Nav commited fruad and had to leave -->
+    
+    
+    <!-- Content -->
+    <article>
+        <section>
+            <br>
+            <h1>About Our Star Wars Universe</h1>
+            <p>Welcome to Our Star Wars Universe, your definitive destination for all things related to the epic Star Wars franchise. We're dedicated to providing fans like you with the most comprehensive and reliable source of information, news, and entertainment within the galaxy far, far away.</p>
+
+            <h2>Our Mission</h2>
+            <p>Our mission is clear: to be your ultimate resource for all things Star Wars. Whether you're a lifelong aficionado or a newcomer to this intergalactic phenomenon, we strive to deliver an immersive and enriching experience that satisfies your thirst for Star Wars knowledge and enjoyment.</p>
+
+            <h2>What You'll Find Here</h2>
+            <p>At Our Star Wars Universe, you'll discover:</p>
+            
+            <p>
+                <a href="films.html">Films</a>,
+                <a href="series.html">Series</a>,
+                <a href="games.html">Games</a>,
+                <a href="media.html">Media</a>,
+                and everything <a href="about.html">About Us</a>.
+            </p>
+            
+            <h2>Contact Us</h2>
+            <p>We welcome the opportunity to connect with our esteemed visitors. If you have inquiries, suggestions, or feedback, please do not hesitate to get in touch. You can reach us through the provided contact form or connect with us on our social media platforms.</p>
+
+            <h2>May the Force Be with You</h2>
+            <p>We appreciate you joining us on this remarkable odyssey through the Star Wars universe. We hope that you find our website informative, enjoyable, and a source of inspiration for your personal Star Wars adventures. May the Force be with you always!</p>
+            <br>
+        </section>
+    </article>
+    <!-- Run out of content -->
+
+ <script>
+// JavaScript to handle the menu toggle
+var menuToggle = document.getElementById("menu-toggle");
+var mobileMenu = document.getElementById("mobile-menu");
+var desktopMenu = document.getElementById("desktop-menu");
+
+function toggleMenu() {
+    if (window.innerWidth <= 768) {
+        mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+    } else {
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "block";
+    }
+}
+
+menuToggle.addEventListener("click", toggleMenu);
+
+// Detect window resize to handle automatic mode switching
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
+        // If the window width is greater than 768px (desktop mode)
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "block";
+    } else {
+        // If the window width is 768px or less (mobile mode)
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "none";
+    }
+});
+</script>   
+    
+</body>
+</html>

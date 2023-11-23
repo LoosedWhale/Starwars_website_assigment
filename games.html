@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StarWars Games</title>
+<link rel="stylesheet" href="mall.css">
+</head>
+    
+<body>
+    <!-- Header start -->
+    <div class= "megahead">
+        <div class="header">
+            <a href="index.html">
+            <div class="headimg"></div>
+            </a>
+        </div>
+        <!-- No more head -->
+        
+        <!-- Nav start -->
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="mobile-menu">
+                <li><a href="films.html">Films</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul id="desktop-menu">
+                <li><a href="films.html">Films</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="breakline"></div>        
+    </div>
+    <!-- Nav commited fruad and had to leave -->
+    
+    
+    <!-- Content -->
+    <article>
+        <section>
+                <br>
+               <h1>Games</h1>
+               <div class="content-container">
+                    
+
+                 <div class="content">
+                        <img src="star-wars-outlaws-key-art-square_b893fc9e.jpeg" alt="Image Description" width="1024" height="1024">
+                        <div class="imgBot"> <p>Star Wars | Outlaws <br> Ubisoft </p></div>
+                    </div>
+                   
+                   <div class="content">
+                        <img src="sw-jedi-survivor-key-art-1080x1080_c38222d5.jpeg" alt="Image Description" width="1024" height="1024">
+                        <div class="imgBot"> <p>Star Wars | Jedi Survivor <br> EA </p></div>
+                    </div>
+                   
+                   <div class="content">
+                        <img src="lego-sw-force-awakens-mobile_427048e4.jpeg" alt="Image Description">
+                        <div class="imgBot"> <p>Star Wars | LEGO Force Awakens <br> Warner Bros. IE</p></div>
+                    </div>           
+                </div>
+                 <p>Star Wars: Outlaws is a thrilling exploration of the galaxy's criminal underworld, showcasing the gritty struggles of those living beyond the reaches of the Empire and the Rebellion.<br><br> Jedi Survivor is a captivating narrative that follows the path of a lone Jedi navigating the treacherous post-Order 66 landscape, desperately trying to evade the Empire's relentless pursuit. <br><br>Star Wars: The Force Awakens rekindles the saga, introducing new heroes and villains while paying homage to the classic Star Wars spirit, setting the stage for an epic battle between the Resistance and the First Order.</p>
+                <br>
+        </section>
+    </article>
+
+    <!-- Run out of content -->
+
+<script>
+// JavaScript to handle the menu toggle
+var menuToggle = document.getElementById("menu-toggle");
+var mobileMenu = document.getElementById("mobile-menu");
+var desktopMenu = document.getElementById("desktop-menu");
+
+function toggleMenu() {
+    if (window.innerWidth <= 768) {
+        mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+    } else {
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "block";
+    }
+}
+
+menuToggle.addEventListener("click", toggleMenu);
+
+// Detect window resize to handle automatic mode switching
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
+        // If the window width is greater than 768px (desktop mode)
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "block";
+    } else {
+        // If the window width is 768px or less (mobile mode)
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "none";
+    }
+});
+</script>  
+    
+    
+
+</body>
+</html>

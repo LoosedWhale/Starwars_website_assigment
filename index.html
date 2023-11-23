@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StarWars Home</title>
+<link rel="stylesheet" href="mall.css">
+</head>
+<body>
+    <!-- Header start -->
+    <div class= "megahead">
+        
+        <div class="header">
+            <a href="index.html">
+            <div class="headimg"></div>
+            </a>
+        </div>
+        <!-- No more head -->
+        
+        <!-- Nav start -->
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="mobile-menu">
+                <li><a href="films.html">Films</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <ul id="desktop-menu">
+                <li><a href="films.html">Films</a></li>
+                <li><a href="series.html">Series</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="breakline"></div>        
+    </div>
+    <!-- Nav commited fraud and had to leave -->
+    
+    <!-- Content -->
+    <article>
+        <b><h4 data-value="STARWARS">STARWARS</h4><script src="script.js"></script></b>
+        <section>
+    <h1>The Epic Saga of Star Wars: A Galaxy Far, Far Away</h1>
+
+    <p>In a galaxy far, far away, a timeless epic unfolds that has captured the hearts and imaginations of generations. Star Wars, the brainchild of visionary filmmaker George Lucas, burst onto the cinematic scene in 1977 with the release of "Star Wars: Episode IV - A New Hope." Little did anyone know at the time that this space-faring adventure would become a cultural phenomenon, spanning multiple generations and encompassing a vast and richly detailed universe.</p>
+
+    <p>The Star Wars saga takes place in a galaxy teeming with diverse species, starships, and planets, where the forces of good and evil are locked in a perpetual struggle for dominance. At the heart of this conflict lies the Jedi Order, a group of skilled warriors who harness the mystical power of the Force to maintain peace and justice, and the Sith, their dark counterparts who seek power and control at any cost.</p>
+
+    <p>The central narrative of the original trilogy follows the journey of Luke Skywalker, a humble farm boy from the desert planet Tatooine, who discovers his connection to the Force and his destiny to confront the evil Darth Vader and Emperor Palpatine. Alongside iconic characters like Princess Leia, Han Solo, and Chewbacca, Luke embarks on a hero's journey that culminates in the redemption of his father, Anakin Skywalker, once a Jedi Knight turned Sith Lord.</p>
+
+    <p>The Star Wars prequel trilogy, released in the late 1990s and early 2000s, explores the rise of the dark side and the fall of Anakin Skywalker, a gifted Jedi Knight who succumbs to the temptations of power and ultimately becomes Darth Vader. This trilogy delves deep into the political intrigue of the Galactic Republic and introduces fans to memorable characters like Obi-Wan Kenobi, Padmé Amidala, and the enigmatic Emperor Palpatine.</p>
+       <div class="content-container">
+            <div class="content">
+                <img src="ahsoka-payoff-vertical-nodate_a20eda2a.jpeg" alt="Image Description" width="400px">
+                <div class="imgBot"> <p>Ahsoka (2023) <br> Seasons: 1 | Episodes: 8</p></div>
+                </div> 
+                <br>
+                <p>With the acquisition of Lucasfilm by Disney in 2012, the Star Wars saga <br>expanded even further. A sequel trilogy was released,<br> featuring a new generation of heroes and villains. <br>"Star Wars: Episode VII - The Force Awakens"<br> introduced audiences to Rey, Finn,<br> and Kylo Ren, continuing the legacy of the original <br>characters while introducing fresh faces to the Star Wars mythos.<br>Beyond the main episodic films, the <br>Star Wars universe has expanded through standalone movies like "Rogue One: <br>A Star Wars Story" and "Solo:<br> A Star Wars Story," which explore <br>untold stories and add depth to beloved characters. <br>These films, along with animated series like "Star Wars: The Clone Wars" and <br>"Star Wars Rebels," have helped build a rich tapestry of <br>lore and history that continues to captivate fans of all ages.</p><br>
+        </div>
+
+    <p>Star Wars is not just a cinematic experience; it's a cultural phenomenon that has given rise to a dedicated fanbase, conventions, merchandise, and a vast expanded universe of books, comics, and video games. The franchise has sparked countless debates and discussions, from dissecting the intricacies of lightsaber combat to speculating on the origins of Supreme Leader Snoke.</p>
+
+    <p>Star Wars' enduring appeal lies in its universal themes of heroism, redemption, and the battle between good and evil. It's a galaxy where ordinary individuals can rise to become heroes, where hope can triumph over despair, and where the Force connects all living things. Whether you're a die-hard fan who can recite every line of dialogue or a newcomer eager to explore a galaxy far, far away, Star Wars continues to invite audiences to embark on a timeless adventure that will resonate for generations to come.</p>
+
+    <p>In conclusion, Star Wars is more than just a series of movies; it's a cultural touchstone that has left an indelible mark on the world of entertainment. With its compelling characters, epic battles, and richly detailed universe, it's a testament to the power of storytelling and the enduring legacy of a galaxy far, far away. May the Force be with you, always.</p>
+
+    <p>May the Force be with you, always.</p>
+    <br>
+        </section>
+    </article>
+    <!-- Run out of content -->
+<script>
+// JavaScript to handle the menu toggle
+var menuToggle = document.getElementById("menu-toggle");
+var mobileMenu = document.getElementById("mobile-menu");
+var desktopMenu = document.getElementById("desktop-menu");
+
+function toggleMenu() {
+    if (window.innerWidth <= 768) {
+        mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+    } else {
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "block";
+    }
+}
+
+menuToggle.addEventListener("click", toggleMenu);
+
+// Detect window resize to handle automatic mode switching
+window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
+        // If the window width is greater than 768px (desktop mode)
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "block";
+    } else {
+        // If the window width is 768px or less (mobile mode)
+        mobileMenu.style.display = "none";
+        desktopMenu.style.display = "none";
+    }
+});
+</script>
+
+    
+</body>
+</html>
